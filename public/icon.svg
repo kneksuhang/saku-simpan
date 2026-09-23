@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#1C1B1A"/>
+  <circle cx="256" cy="256" r="180" fill="#252423" stroke="#3A3938" stroke-width="4"/>
+  <!-- Elegant minimalist pocket outline with Shu-iro accent -->
+  <path d="M160 200 C 160 180, 180 160, 210 160 L 302 160 C 332 160, 352 180, 352 200 L 352 270 C 352 320, 310 360, 256 360 C 202 360, 160 320, 160 270 Z" fill="#E64A19" opacity="0.9"/>
+  <path d="M180 200 L 332 200 C 332 240, 298 280, 256 280 C 214 280, 180 240, 180 200 Z" fill="#F9F6F0" opacity="0.95"/>
+  <circle cx="256" cy="235" r="12" fill="#E64A19"/>
+</svg>

@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "sAku simpan",
+  "short_name": "sAku simpan",
+  "description": "Aplikasi penyimpanan wishlist dan produk pribadi sAku simpan dengan kategori, tag, visualisasi statistik, kustomisasi dento-iro, dan proteksi PIN.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F9F6F0",
+  "theme_color": "#C53D43",
+  "categories": ["lifestyle", "shopping", "utilities"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
