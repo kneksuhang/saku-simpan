@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/saku-simpan/sw.js', { scope: '/saku-simpan/' })})}
