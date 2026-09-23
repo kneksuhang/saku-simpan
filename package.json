@@ -7,7 +7,7 @@
     "dev": "vite --port=5173",
     "build": "vite build",
     "preview": "vite preview",
-    "clean": "rm -rf dist server.js",
+    "clean": "rmdir /s /q dist",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
