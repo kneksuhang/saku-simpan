@@ -26,7 +26,9 @@ function safeViteHmrPlugin() {
 }
 
 export default defineConfig(() => {
+  const baseSlug = "/saku-simpan/";
   return {
+    base: baseSlug,
     plugins: [
       react(),
       tailwindcss(),
@@ -34,7 +36,7 @@ export default defineConfig(() => {
       VitePWA({
         registerType: "autoUpdate",
         manifest: {
-          id: "/",
+          id: baseSlug,
           name: "sAku simpan",
           short_name: "sAku simpan",
           description:
@@ -46,7 +48,7 @@ export default defineConfig(() => {
           scope: "/",
           icons: [
             {
-              src: "/icon.svg",
+              src: "icon.svg",
               sizes: "192x192 512x512",
               type: "image/svg+xml",
               purpose: "any",
