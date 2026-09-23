@@ -372,7 +372,7 @@ export const ProductFormModal: React.FC<ProductFormModalProps> = ({
           <label className="text-xs font-bold tracking-wide uppercase text-(--text-primary)">
             Status Kepemilikan Produk
           </label>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-1 gap-2">
             {[
               {
                 id: "wishlist" as OwnershipStatus,
@@ -604,7 +604,7 @@ export const ProductFormModal: React.FC<ProductFormModalProps> = ({
                   key={linkItem.id || idx}
                   className="rounded-xl border border-(--border-color) bg-(--bg-card) p-2.5 space-y-2 shadow-2xs"
                 >
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 overflow-scroll">
                     {/* Live Favicon Badge */}
                     <div className="h-8 w-8 rounded-lg bg-(--bg-main) border border-(--border-color) flex items-center justify-center shrink-0">
                       {favicon ? (

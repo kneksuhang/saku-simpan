@@ -35,6 +35,7 @@ export default defineConfig(() => {
       safeViteHmrPlugin(),
       VitePWA({
         registerType: "autoUpdate",
+        injectRegister: "inline",
         manifest: {
           id: baseSlug,
           name: "sAku simpan",
@@ -44,8 +45,8 @@ export default defineConfig(() => {
           theme_color: "#F9F6F0",
           background_color: "#F9F6F0",
           display: "standalone",
-          start_url: "/",
-          scope: "/",
+          start_url: baseSlug,
+          scope: baseSlug,
           icons: [
             {
               src: "icon.svg",
@@ -56,8 +57,8 @@ export default defineConfig(() => {
           ],
         },
         workbox: {
-          navigateFallback: "/index.html",
-          navigateFallbackAllowlist: [/^\/.*$/],
+          navigateFallback: `${baseSlug}index.html`,
+          navigateFallbackAllowlist: [new RegExp(`^${baseSlug}`)],
 
           skipWaiting: true,
           clientsClaim: true,
